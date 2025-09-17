@@ -1,0 +1,53 @@
+
+------------------------------ INSTRUCCIONES CONTROL E-MAILS DE DATOS ------------------------------ 
+Autor: Javier Méndez Moral \ Green Energies Intern \ javimendez21299@gmail.com 
+Última actualización: 15/09/2025
+
+------------------------------------------------------------------------------------------------------------------------
+
+En este documento se explican los pasos para ejecutar el programa control_emails.py y actualizar el archivo control_emails.xlsx y control_emails.csv
+donde se muestra si se ha recibido el correo de datos para los diferentes sistemas (LiDAR, TM, SoDAR, Solar) y una fecha concreta.
+Se da un 1 si se ha recibido el correo y un 0 si no se ha recibido y se representa en código de colores (sí = 1 = verde; no = 0 = rojo).
+Los correos se leen de la carpeta "Dades Meteo", luego si no están en ésta dará un 0.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Para poder ejecutar el código y que funcione es necesario tener Python y los paquetes necesarios instalados 
+  -> Para descargar python: https://www.python.org/downloads/ (IMPORTANTE durante la instalación añadir Python al PATH). 
+  -> Para los paquetes, es muy probable que, si nunca habéis instalado y trabajado con Python, tengáis problemas. Para instalarlos, 
+una vez instalado python podéis probar a instalarlos vosotros mismos escribiendo en el cmd (ver paso 2) pip install pandas, luego pip install pywin32 
+y luego pip install openpyxl
+
+También es necesario estar conectado al servidor y tener los archivos control_emails.xlsx y control_emails.csv cerrados.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Los pasos son los siguientes:
+
+1 - Abrir Outlook e iniciar sesión con la cuenta energias.renovables.es@dekra.com (contraseña: Dekr@050825) y no cerrar hasta acabar de ejecutar.
+    Nota: No hace falta cerrar sesión con vuestra cuenta personal, el código selecciona automáticamente la cuenta energias.renovables.es@dekra.com
+
+2 - Abrir terminal:
+    Buscar símbolo del sistema, terminal, cmd en el buscador de Windows
+
+3 - Acceder a la ruta de interés:
+    Escribir la siguiente instrucción en el terminal: cd /d Z:\EOLICA\MAT REF\BASE DE DATOS ESTACIONES\control_emails
+
+4 - Llamar al programa control_emails.py con la/s fechas de las cuales queremos obtener la información de correos recibidos. 
+    Si se quiere ejecutar solo para una fecha en particular hay que escribir 
+                    python control_emails.py YYYY-MM-DD 
+               Ej.: python control_emails.py 2025-08-14
+    Si se quiere ejecutar para todo un rango de fechas hay que escribir
+                    python control_emails.py YYYY-MM-DD YYYY-MM-DD
+               Ej.: python control_emails.py 2025-08-14 2025-08-18
+    Nota: Es necesario que el orden de fechas sea el que se da en el ejemplo, es decir que la fecha más reciente se escriba la segunda
+
+    Cabe tener en cuenta que, como los correos de datos para un día suelen llegar al día siguiente, si ejecutamos el código para el día actual obtendremos
+    todo ceros. c
+
+Después de realizar estos pasos se puede comprobar que se ha editado el archivo control_emails.xlsx con las fechas dadas
+
+
+
+
+ 
