@@ -33,7 +33,7 @@ El flujo principal es el siguiente:
 
 ## Requisitos  
 
-- Tener Python y los paquetes pandas, openpyxl, pywin32 instalados.
+- Tener Python y los paquetes **pandas**, **openpyxl**, **pywin32** instalados.
 
 - Tener Microsoft Outlook instalado y configurado en el sistema.
 
