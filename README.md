@@ -31,15 +31,15 @@ El flujo principal es el siguiente:
 
 ---
 
-## Requisitos  
+## 🛠️ Requisitos  
 
-- Tener Python y los paquetes **pandas**, **openpyxl**, **pywin32** instalados.
+- Tener Python y los paquetes **`pandas`, `openpyxl`, `pywin32`** instalados.
 
 - Tener Microsoft Outlook instalado y configurado en el sistema.
 
 --- 
 
-## Notas
+## 📒 Notas
 
 - El script depende de que Outlook esté instalado y correctamente configurado con la cuenta indicada en el código.
 
@@ -47,7 +47,7 @@ El flujo principal es el siguiente:
 
 - Es recomendable revisar el archivo Instrucciones.txt antes de la primera ejecución.
 
-- Los archivos .venv/ y .vscode/ se usan únicamente en el entorno de desarrollo y no son necesarios para la ejecución.
+- Los archivos **`.venv/`**, **`.vscode/`** se usan únicamente en el entorno de desarrollo y no son necesarios para la ejecución.
 
 - Archivos temporales de Windows como Thumbs.db no deben subirse al repositorio.
 
